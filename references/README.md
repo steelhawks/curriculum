@@ -10,6 +10,8 @@
 
 - **[Yet Another Mechanisms Generator](https://www.yamgen.com/)**
 
+- **[Visual-Based Sensor Systems - 2026](https://docs.google.com/document/d/1X-8np3HTmi9PrR4aJMpcmxYtmeETZvIVFNJOMzX4coM/edit?usp=sharing)** 
+
 - **[2601 Programming Reference (2025-2026)](https://docs.google.com/document/d/1cYESccVNGiP9auOqsNPCvrLDYXkARsxuzas-YJPPSfU/edit?usp=sharing)**  
 
 - **[2601 The Logic Behind Alignment (2025)](https://docs.google.com/document/d/1xtGGkc46-08mY3lbCxVU2V-Z-Y6soyELu27jn4peDYY/edit?usp=sharing)**  
