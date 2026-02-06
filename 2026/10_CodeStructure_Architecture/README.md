@@ -18,3 +18,4 @@ AdvantageKit
 
 # Slides
 [Slide 10A: Basic Project Structure](https://docs.google.com/presentation/d/1EnhUk7sGpDgem9r2IgVWKXXz6X0uSGD1/edit?usp=sharing&ouid=102697774974603821076&rtpof=true&sd=true)
+[Slide 10B: AdvantageKit, Subsystem Folders & IO Interfaces](https://docs.google.com/presentation/d/1BVU7JtMA4MkKT19GN26qCO4E3JU0FdQr/edit?usp=sharing&ouid=102697774974603821076&rtpof=true&sd=true)
