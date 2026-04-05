@@ -23,9 +23,9 @@ function HomepageHeader() {
         </div>
 
         <div className={styles.heroText}>
-          <p className={styles.heroEyebrow}>FRC Team 2601</p>
           <Heading as="h1" className={styles.heroTitle}>
-            Steel<span className={styles.heroAccentWord}>Hawks</span>
+            Steel<span> Hawks</span>
+            <span className={styles.heroAccentWord}>Curriculum</span>
           </Heading>
 
           <div className={styles.heroCtas}>
