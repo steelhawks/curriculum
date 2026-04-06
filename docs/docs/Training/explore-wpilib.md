@@ -21,7 +21,7 @@ After you do that you should be on a page similar to this:
 From here, fill template not example, java not cpp, and search Command Robot as a base. This is the most common type that is normally used, however we use something called a LoggedRobot, which you will learn about later. 
 
 After selecting the folder you want it to be in, naming the project: "Curriculum", and giving our team number **(you should know it)**: 2601, click Generate Project.
-> Remember the Name Curriculum, as we will go back to it after all this setup is done.
+> Remember the name Curriculum, as we will go back to it after all this setup is done.
 
 ## File Structure
 Here is where we will explore the folders and files of this project. It's ok not to know much, and you will get used to everything later once you learn a bit of basic java. If you have any questions at this point or are very confused/lost, please reach out to a lead programmer and they will help you. 
@@ -33,7 +33,7 @@ RobotContainer.java is where we **Initialize** our subsystems and configure our 
 Robot.java is our main robot loop. This means that every 20 milliseconds, we are monitoring the robot. We also  **Initialize** our robot container and **Command Scheduler**. These things are a necessity for our robot to run. Robot.java isn't touched that much, and we mainly do all of our configurations in RobotContainer.java.
 
 ![Alt text](../../static/img/robot-robotcontainer.png)
-> P.S. It's ok if you don't know what any of the bold words mean (Initialize, Loops, Command Scheduler). These are relatively advanced concepts, and will definetly be covered. If you're curious about them ask a lead programmer.
+> P.S. It's ok if you don't know what any of the bold words mean (Initialize, Loops, Command Scheduler). These are relatively advanced concepts, and will definitely be covered. If you're curious about them ask a lead programmer.
 
 
 ### Subsystems
