@@ -2,46 +2,63 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Welcome to Steel Hawks Software
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome to the software documentation for **FRC Team 2601 - Steel Hawks**! This documentation covers everything you need to know about programming and software development for our competition robots.
 
 ## Getting Started
 
-Get started by **creating a new site**.
+If you are looking to start programming for the team, the first step is joining our **[GitHub Organization](https://github.com/steelhawks)**. Once you have created a GitHub account, reach out to a lead programmer to get added.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+We have a training curriculum designed to take you from zero to competition-ready. No prior programming experience is required — but you will need patience, persistence, and a genuine passion for robotics.
 
-### What you'll need
+## Programming is Hard. That's the Point.
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+Let's be honest: **software is one of the most demanding subteams on Steel Hawks.** You won't pick this up in a weekend. There will be moments where something that should take 5 minutes takes 5 hours. There will be bugs you can't explain. There will be matches where the code you wrote is the reason the robot doesn't work — and you'll have to own that.
 
-## Generate a new site
+That's not meant to scare you off. That's meant to prepare you.
 
-Generate a new Docusaurus site using the **classic template**.
+The programmers who have made the biggest impact on this team aren't necessarily the ones who were naturally gifted — they're the ones who kept showing up, kept debugging, and kept learning even when it was frustrating. **If you're willing to put in the work, this is one of the most rewarding things you'll do in high school.**
 
-The classic template will automatically be added to your project after you run the command:
+## This is a Two-Way Commitment
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+Good mentorship matters, and we take that seriously. Mentors and lead programmers on Steel Hawks are committed to:
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+- Explaining concepts clearly and not just handing you answers
+- Being available during build season and beyond
+- Pushing you to understand *why* something works, not just *that* it works
+- Treating your questions as worth answering, no matter how basic
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+But mentorship only works if **you show up for your end of it too.** That means:
 
-## Start your site
+- Coming to meetings consistently, especially during build season
+- Attempting problems on your own before asking for help
+- Actually reading documentation and error messages
+- Not disappearing after kickoff when things get hard
 
-Run the development server:
+The robots we're most proud of were built by students who treated programming like a craft — something you develop over months and years, not something you can cram the night before a regional.
 
-```bash
-cd my-website
-npm run start
-```
+## Our Training Curriculum
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+We have a structured curriculum to walk you through the skills you'll need. It starts with programming fundamentals and builds up to more advanced topics like computer vision, control theory, and autonomous systems. It's designed to be completed over a few weeks, with each section building on the last.
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+An overview of the curriculum can be found in the **Training** section of this documentation.
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+## Past Robot Repositories
+
+Every robot we've built is a snapshot of where our software team was at that point in time. Look through these — you'll see how far we've come.
+
+| Year | Game | Robot Name | Repository |
+|------|------|------------|------------|
+| 2025 | Reefscape | Chimera | [2025](https://github.com/steelhawks/Reefscape2025) |
+| 2024 | Crescendo | Hawk Rider | [2024](https://github.com/steelhawks/Crescendo2024) |
+| 2023 | Charged Up | Hawk Bibi | [2023](https://github.com/steelhawks/ChargedUP2023) |
+| 2022 | Rapid React | — | [2022](https://github.com/steelhawks/2022-Rapid-React-Robot) |
+
+> Don't see your year? Reach out to a lead programmer — some older repositories may be private or archived.
+
+## Ready to Start?
+
+Head over to the **Training** section to begin, or jump into **Software Tools** if you already have some experience and want to get set up with the team's development environment.
+
+The best time to start was last season. The second best time is now.
