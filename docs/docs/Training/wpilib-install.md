@@ -20,11 +20,11 @@ For Robot Code, We use a library called WPILIB. This library enables us to progr
 
 ### Windows
 
-Go to the start menu and search for WPILIB VSCode 2027, it should appear if installation was successful. If it appears, Click on it, if not reach out to a lead programmer to figure out why it didn't, or to help with installation. 
+Go to the start menu and search for WPILIB VSCode 2026, it should appear if installation was successful. If it appears, Click on it, if not reach out to a lead programmer to figure out why it didn't, or to help with installation. 
 
 ### MacOs
 
-Use this Shortcut: `cmd + space` in order to open up the search bar, then search for WPILIB VSCode 2027. Again, if it shows up then click on it, if not then ask a lead programmer for help. 
+Use this Shortcut: `cmd + space` in order to open up the search bar, then search for WPILIB VSCode 2026. Again, if it shows up then click on it, if not then ask a lead programmer for help. 
 
 
 ## NI Game Tools

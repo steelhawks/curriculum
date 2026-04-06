@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Explore WPILIB VSCode
 
-In This section we will explore how to create a project, the file structure behind a project how we would create our 2027 project.
+In This section we will explore how to create a project, the file structure behind a project how we would create our 2026 project.
 
 ## Create a Project through WPILIB 
 

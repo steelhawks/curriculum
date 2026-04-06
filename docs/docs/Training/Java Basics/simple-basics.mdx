@@ -1,0 +1,113 @@
+---
+sidebar_position: 1
+---
+
+import Quiz from '@site/src/components/Quiz.jsx'
+
+# Basics 101 of Java
+Now we start learning a new programming language. The first step is to learn how to create a new file. Then we'll learn how to print out statements, and much more! This is where programming will start to get hard, this is where most people quit, but this is also the start of success if you're willing to persevere. 
+
+
+## Creating A New File
+
+Remember that project we made called Curriculum? Well, we're going back to it. Open up WPILIB VSCode 2026 and click open folder, or, if you're already in the project you can move on to the next step.
+
+**INSERT IMAGE**
+
+Now right click on the subsystems folder, and click create new folder. Name it Turret. We're going to pretend this is our turret subsystem. After this, right click on the Turret folder and search for Create New Class/Command. Enter the name Turret as well. 
+
+**INSERT ANOTHER IMAGE**
+
+## Programming Time!
+Now we start actually programming stuff such as print statements and variables.
+
+So let's begin. 
+
+### Print Statements
+
+After creating a new file, go inside the brackets and type this line of code:
+
+```
+public Turret() {
+
+}
+```
+
+This is what we call a **Constructor**. You will learn about this in a later lesson, but for now, this is where we'll write all our code. After that, inside this constructor, type this line of code: `System.out.println("Hello Steel Hawks");` DON'T FORGET THE SEMICOLON AT THE END
+
+**INSERT IMAGE OF COMPLETED CODE**
+
+That's it! You have written your first program. So what specifically does this do. The parenthesis are what you want to show to the console. Make sure, whatever text you show has "" around it otherwise it will cause an error. The semicolon indicates an end to that line. After writing any line of code (with a few exceptions), you must put a semicolon.  The console is where these print statements (what you just did) and error messages get shown. 
+
+**YOU ARE NOT DONE YET**
+
+Now usually in a regular piece of Java this is enough to run the print statement. But this is robot code, and therefore we need to put this code in RobotContainer.java.
+
+
+#### Putting It In RobotContainer
+We're going to do something called Initalizing, which you will learn about a little later as well, for now, just follow along with the code.
+
+In RobotContainer.java, go to the very top of your main class (you'll see it says public class RobotContainer) and right under that line type `public static Turret s_Turret;` This creates an instance of your file in RobotContainer.
+
+**INSERT IMAGE**
+
+Next, you're going to see a codeblock called `public RobotContainer() {}`, which will have some code in inside the curly brackets. In this constructor type this line `s_Turret = new Turret();`. This will officially allow you to run you're code.
+
+#### Running Your Code
+
+Now, go to that little icon on the top right you used to create a new project, and type Build Robot Code. Then click enter and watch your code build.
+
+**INSERT IMAGE**
+
+You might have to do some searching, but afterwards you will find your Hello Steel Hawks message. When you want to edit that message, just go back to Turret.java and write whatever you want. Or make multiple print statements. Try it out! If you have any questions, please ask a lead programmer.
+
+
+### Variables
+Now were going to talk about variables, what are the main types of variables, how to create and use them.
+
+So what are variables. You can think of variables as containers that store values. Just like in algebra, they can be called by a letter, name, or anything at all! They store values of different types, like text, numbers, and many others.
+
+#### Data Types
+So what is a data type. A data type is the type of thing we store in a variable. Text and numbers for example, cannot be stored the same way.
+
+| Data Type | Name | Example |
+|------|------|------------ |
+| Text | String | "Hello World" |
+| Number | int | 5 |
+| Decimal | double | 5.4 |
+| True/False | boolean | false |
+> Note that int and double don't have quotation marks, if you put quotations marks around anything (including numbers), they become the String data type. So be careful what data type you use.
+
+#### Creating Variables
+
+Let's do a small quiz to see if you can develop your own variable:
+
+<Quiz questions={[
+  {
+    prompt: "For a variable of Name, what data type would you use?",
+    options: ["String", "double", "int", "boolean"],
+    correct: 0,
+    explanation: "A string would be perfect to represent a piece of text, such as your name"
+  },
+  {
+    prompt: "For a variable of Age, what data type would you use: ",
+    options: ["double", "float", "int", "boolean"],
+    correct: 2,
+    explanation: "For age, double is not good because 5.4 isn't and age, and float is not a datatype, so int is the correct choice"
+  }
+]} />
+
+Now that we got you're concepts down let's actually create a variable. Go into your Turret.java file, and create a new variable for your name: `private final String my_name;`
+
+Then, in our constructor (It's that thing that starts with `public Turret() {}`), type this: `my_name = "Krish"`.
+
+So what exactly did we do here. We created a variable of data type String, and called it my_name. The structure of making a variable is very simple. First you put the data type, then you put the name of the variable. `Private` and `final` are both unncessary for a variable, but are added because that's how we usually make variables in our code. 
+
+#### Using Variables
+
+So let's say I wanted to print out "Hi my name is Krish", and I had a variable my_name. I would write this line `System.out.println("Hi my name is " + my_name)` This is called concatination, where you "add" a variable to something else. Variables are used all over our code base, from calculations to datapoints that we log, variables are a key component of everything we do.
+
+## Next Steps
+Practice creating variables that define parts of you: Your age, your name, how tall you are (double values) and your favorite thing to eat. Create variables and print statements for these things and show them to your lead programmer.
+
+You are officially done with this section! **You may move on to Logic and Loops**

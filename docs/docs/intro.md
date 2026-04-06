@@ -53,7 +53,7 @@ Every robot we've built is a snapshot of where our software team was at that poi
 | 2025 | Reefscape | Chimera | [2025](https://github.com/steelhawks/Reefscape2025) |
 | 2024 | Crescendo | Hawk Rider | [2024](https://github.com/steelhawks/Crescendo2024) |
 | 2023 | Charged Up | Hawk Bibi | [2023](https://github.com/steelhawks/ChargedUP2023) |
-| 2022 | Rapid React | — | [2022](https://github.com/steelhawks/2022-Rapid-React-Robot) |
+| 2022 | Rapid React | Hawktimus Prime | [2022](https://github.com/steelhawks/2022-Rapid-React-Robot) |
 
 > Don't see your year? Reach out to a lead programmer — some older repositories may be private or archived.
 
