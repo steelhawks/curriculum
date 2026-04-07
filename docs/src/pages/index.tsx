@@ -51,7 +51,7 @@ const features = [
     title: 'Java Fundamentals',
     body:
       'Start with the basics of Java programming. Learn about variables, control flow, OOP principles, and how to set up your development environment for FRC coding.',
-    href: '/docs/intro',
+    href: '/docs/Training/Java Basics/simple-basics',
   },
   {
     icon: '🤖',
