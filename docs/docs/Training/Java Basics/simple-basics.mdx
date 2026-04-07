@@ -12,12 +12,9 @@ Now we start learning a new programming language. The first step is to learn how
 
 Remember that project we made called Curriculum? Well, we're going back to it. Open up WPILIB VSCode 2026 and click open folder, or, if you're already in the project you can move on to the next step.
 
-**INSERT IMAGE**
-
 Now right click on the subsystems folder, and click create new folder. Name it Turret. We're going to pretend this is our turret subsystem. After this, right click on the Turret folder and search for Create New Class/Command. Enter the name Turret as well. 
 
-**INSERT ANOTHER IMAGE**
-
+![Alt text](../../../static/img/newfile.png)
 ## Programming Time!
 Now we start actually programming stuff such as print statements and variables.
 
@@ -35,7 +32,7 @@ public Turret() {
 
 This is what we call a **Constructor**. You will learn about this in a later lesson, but for now, this is where we'll write all our code. After that, inside this constructor, type this line of code: `System.out.println("Hello Steel Hawks");` DON'T FORGET THE SEMICOLON AT THE END
 
-**INSERT IMAGE OF COMPLETED CODE**
+![Alt text](@site/static/img/completecode.png)
 
 That's it! You have written your first program. So what specifically does this do. The parenthesis are what you want to show to the console. Make sure, whatever text you show has "" around it otherwise it will cause an error. The semicolon indicates an end to that line. After writing any line of code (with a few exceptions), you must put a semicolon.  The console is where these print statements (what you just did) and error messages get shown. 
 
@@ -49,15 +46,16 @@ We're going to do something called Initalizing, which you will learn about a lit
 
 In RobotContainer.java, go to the very top of your main class (you'll see it says public class RobotContainer) and right under that line type `public static Turret s_Turret;` This creates an instance of your file in RobotContainer.
 
-**INSERT IMAGE**
 
 Next, you're going to see a codeblock called `public RobotContainer() {}`, which will have some code in inside the curly brackets. In this constructor type this line `s_Turret = new Turret();`. This will officially allow you to run you're code.
+
+![Alt text](@site/static/img/completecode2.png)
+
 
 #### Running Your Code
 
 Now, go to that little icon on the top right you used to create a new project, and type Build Robot Code. Then click enter and watch your code build.
 
-**INSERT IMAGE**
 
 You might have to do some searching, but afterwards you will find your Hello Steel Hawks message. When you want to edit that message, just go back to Turret.java and write whatever you want. Or make multiple print statements. Try it out! If you have any questions, please ask a lead programmer.
 

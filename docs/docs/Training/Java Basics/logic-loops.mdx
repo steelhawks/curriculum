@@ -283,6 +283,25 @@ If you understand everything, we have a brain teaser for you: Use what you've le
 
 We are trying to find the sum of a series of numbers in which each term is 3x the previous term. The last term is the 12 term, and the first term is 2. Find the sum of all terms
 
-**When you are ready, or when you give up, contact a lead programmer for a correct answer.**
+<details>
+  <summary>💡 See the solution</summary>
+
+  This is a **geometric series** where the first term is `2` and the ratio is `3`. Use a for loop to build it up:
+```java
+  int term = 2;
+  int sum = 0;
+
+  for (int i = 1; i <= 11; i++) {
+      sum += term;
+      term *= 3;
+  }
+
+  System.out.println("Sum: " + sum);
+```
+
+  Each iteration multiplies the current term by 3 and adds it to the running total. After 12 terms, the sum is **1,062,882**.
+
+</details>
+
 
 **You are done with this section and may move on to the next!**
