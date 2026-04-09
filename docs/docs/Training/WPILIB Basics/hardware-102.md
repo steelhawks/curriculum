@@ -2,6 +2,8 @@
 sidebar_position: 2
 ---
 
+import Quiz from '@site/src/components/Quiz.jsx'
+
 # Hardware 102
 In this section we'll go through connections and wiring, as well as what radio tethering is. As the build season progresses, you should go and learn from electrical, as whatever we program highly involves electrical data and you should know what you're looking at.
 
