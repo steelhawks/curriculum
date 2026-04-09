@@ -292,12 +292,11 @@ We are trying to find the sum of a series of numbers in which each term is 3x th
   int last = 12;
   int sum = 0;
 
-  for (int i = 1; i <= last - 1; i++) {
+  for (int i = 1; i <= last; i++) {
       sum += term;
       term *= 3;
   }
 
-  sum += term;
   System.out.println("Sum: " + sum);
 ```
 

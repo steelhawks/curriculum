@@ -2,12 +2,21 @@
 sidebar_position: 1
 ---
 
+
+import Quiz from '@site/src/components/Quiz.jsx'
+
+
 # Hardware 101
 Welcome to Hardware 101! Congratulations again on completing basic java! I know it was hard, and you're still a bit confused, but with practice you'll get better. You have to have faith in the learning process. In this section we'll cover the different pieces of electrical equipment we program and use, as well as how they are all connected. When you're ready, let's begin!
 
 ## Systemcore
 
-Welcome to our first piece of equipment. The systemcore is the 2027 brain of our robot. This is similar to a computer. It contains a cpu, and processes all our code. We then connect everything to the systemcore and then it runs our code on the correct mechanisms. You might be asking how do we send code to systemcore, well, checkout the radio section for information about how we send code.
+Welcome to our first piece of equipment. The systemcore is the 2027 brain of our robot. This is similar to a computer. It contains a cpu, and processes all our code. We then connect everything to the systemcore and then it runs our code on the correct mechanisms. The main breakdown of ports and information of the Systemcore is here: **[Systemcore Docs](https://downloads.limelightvision.io/documents/systemcore_specifications_june15_2025_alpha.pdf)
+Some pertinent information inlcudes it has 5 CANBus interfaces and It has io ports and also pmw ports, as well as addressable LED (which we use for our led's). It also has brownout protection.
+
+
+
+ You might be asking how do we send code to systemcore, well, checkout the radio section for information about how we send code.
 
 ## Radio
 The radio is what we use to deploy code on the robot. It broadcasts a wifi signal, and we connect to it's wifi, then we click deploy robot code. When we deploy, the radio connects to the systemcore and then sends the code, which then get's processed. We do something called radio tethering, to learn more about it go to this link: **[FRC Radio Programming](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-3/radio-programming.html)**. The radio is extremely important in have a succesful robot, and we will talk more about radio tethering in Hardware 102
@@ -18,4 +27,98 @@ The PDP or PDH are used for distributing power everywhere. We connect the batter
 
 ## Motors
 
-We use a variety of motors, mainly from this company called CTRE. CTRE produces motors called Kraken's, which we mainly use. We also use talon srx's, which is just another type of motor. These motors run everything on our robot from intake to wheels to turret to how we actually move on the floor. These all come with something called a motor controller, which we program
+We use a variety of motors, mainly from this company called CTRE. CTRE produces motors called Kraken's, which we mainly use. We also use talon srx's, which is just another type of motor. These motors run everything on our robot from intake to wheels to turret to how we actually move on the floor. These all come with something called a motor controller, which we program and use to set voltage to the motor. 
+
+
+## Encoders & Cancoders
+What are encoders and cancoders? These are what we use to track the rotation distance of our mechanisms, for example, if a turret rotated 360 degrees, it would have 1 revolution, and 2 pi radians. 
+
+### Encoder vs Cancoder
+An encoder doesn't keep track of motor positions when the motor turns off, but a cancoder keeps track of the motor positions of all time, and it provides useful information for things like **Swerve** angle motors.
+
+To learn more about Encoders and Cancoders visit this site: **[Encoders](https://docs.wpilib.org/en/stable/docs/hardware/sensors/encoders-hardware.html)**
+
+## Pneumatics & Solenoids
+Think of pneumatics like a circuit, but instead of electricity flowing through wires, compressed air flows through plastic tubes.
+
+The Compressor: This is the "battery" of the air system. It creates the pressure.
+
+The Air Tank: This stores the air so you don't run out mid-match.
+
+The Solenoid: This is the gatekeeper. It’s an electronic valve that opens or closes when the RoboRIO tells it to, directing air to your cylinders.
+
+The Cylinder (Piston): This is the part that actually moves.
+
+### Solenoids
+
+In WPILIB, you will deal with two main types of solenoids. Choosing the right one in your code depends on which one is physically on your robot:
+
+Single Solenoid
+How it works: It has one "coil" (electric trigger). When you turn it on, the piston pushes out. When you turn it off, a spring (or constant air) pushes it back.
+
+In Code: It’s like a light switch. It is either On or Off.
+
+Double Solenoid
+How it works: It has two coils. One "pushes" the valve to move the piston out; the other "pushes" it to move the piston back.
+
+The Perk: If the robot loses power, a double solenoid stays in its last position.
+
+In Code: It has three states: Forward, Reverse, or Off (Neutral).
+
+
+
+## Vision
+We use two types of vision, Photonvision and Limelights. Here we'll discuss both.
+
+### Photonvision
+
+Photonvision is a software system used for us to detect these QR-code like things called **april tags**. April tags help us identify key points on the game field, which help us complete the objective of the game. For running photonvision software (which you'll learn how it works later) we use something called **arducams**, which are hooked up to a raspberry pi processor that runs some other software. This is a more complex system, but later on we'll break it down for you.
+
+### Limelight
+
+Last year, we mainly used limelights for advanced vision processing, where we trained an ML model on object detection. Limelights are way heavier, and require a cooler as well. These are mainly for object detection and other processing intensive stuff, whereas photonvision is easier to manipulate.
+
+## Quiz
+<Quiz questions={[
+{
+prompt: "Which component acts as the 'brain' of the robot, processing the Java code and controlling mechanisms?",
+options: ["The PDP/PDH", "The Systemcore", "The Radio", "The Limelight"],
+correct: 1,
+explanation: "The Systemcore contains the CPU and handles the processing of your code, similar to how a computer works."
+},
+{
+prompt: "If you need a mechanism to stay in its last position even if the robot loses power, which component should you use?",
+options: ["Single Solenoid", "Double Solenoid", "Talon SRX Motor", "Cancoder"],
+correct: 1,
+explanation: "Double solenoids have two triggers; they will stay in their 'Forward' or 'Reverse' state even if electricity is cut."
+},
+{
+prompt: "What is the primary advantage of a Cancoder over a standard encoder?",
+options: ["It is much lighter", "It connects via Wi-Fi", "It remembers its position even after the power is turned off", "It makes the motor spin faster"],
+correct: 2,
+explanation: "Cancoders provide 'absolute' positioning, meaning the robot always knows the angle of the mechanism (like a Swerve module) immediately upon startup."
+},
+{
+prompt: "What is the difference between Photonvision and Limelight based on the text?",
+options: [
+"Photonvision is for motors, Limelight is for air",
+"Photonvision is a software system often used for April Tags; Limelights are hardware units used for heavy processing like ML models",
+"Limelights are lighter and easier to use than Photonvision",
+"There is no difference"
+],
+correct: 1,
+explanation: "The text notes that Photonvision is used with Arducams for April Tags, while Limelights are heavier and used for more intensive tasks like Machine Learning object detection."
+},
+{
+prompt: "Which device acts as the 'heart' of the robot, distributing power from the battery to all other components?",
+options: ["The Radio", "The Systemcore", "The PDP/PDH", "The Solenoid"],
+correct: 2,
+explanation: "The Power Distribution Panel (PDP) or Hub (PDH) is responsible for taking the main battery power and sending it out to the rest of the electronics."
+}
+]} />
+
+## Next Steps
+
+Use the links provided to research more about these components, and you'll learn how we wire them in the next section.
+
+**Now that you've learned the basics, you can move into Hardware 102. You have finished this section**
