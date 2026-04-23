@@ -12,7 +12,7 @@ So how do we create and run motors. First we have to go over something called ve
 As you know, we use a lot of different softwares and programs when we code. To have the robot understand and use these programs we need to install something called vendordeps, which are big libaries that we use to help our robot understand different mechanisms. To install them, go to the bottom-most icon on the left side and click it. In our case, when we're programming motors, so we'll search for something called Phoenix Tuner (or something Phoenix). after you click install, it should start running the installation. After 1 min or so, it should be done. Now, you'll be able to control all motors made by CTRE, which include Talon SRX and Kraken's.
 
 
-[**INSERT IMAGE OF VENDORDEPS**]
+![Alt text](../../../static/img/vendordeps.png)
 
 
 ## Creating a motor
