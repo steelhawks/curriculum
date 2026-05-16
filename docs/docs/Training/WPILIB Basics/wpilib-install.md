@@ -13,7 +13,7 @@ For Robot Code, We use a library called WPILIB. This library enables us to progr
 
  Head over to this link: **[WPILIB Dowload Page](https://docs.wpilib.org/en/latest/docs/zero-to-robot/step-2/wpilib-setup.html])** and look for a big blue button that says **Download For Windows/MacOS/Linux**
 
- ![Alt text](../../static/img/wpilibinstall.png)
+ ![Alt text](../../../static/img/wpilibinstall.png)
 
 
  After Going through the installation prompts (**MAKE SURE TO CLICK INSTALL VSCODE**) you will be able to open WPILIB VSCode. If you're unsure of anything during the installation process, don't be afraid to reach out to a lead programmer to help you. Asking for help is always better than making a mistake that costs you valuable time.
@@ -40,4 +40,4 @@ To download these tools, head over to this website: **[NI Game Tools](https://ww
 For windows users, you will have to create an account. Then you will be redirected back to that page, and you will be able to download the tools. After downloading all of them and accepting any agreements, you may proceed to the next section.
 
 
-![Alt text](../../static/img/nitools.png)
+![Alt text](../../../static/img/nitools.png)

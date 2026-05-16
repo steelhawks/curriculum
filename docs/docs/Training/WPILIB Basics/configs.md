@@ -1,5 +1,5 @@
 ---
-sidebar: 4
+sidebar: 7
 ---
 
 # Motor Configs

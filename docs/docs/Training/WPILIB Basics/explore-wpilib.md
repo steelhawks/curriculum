@@ -10,13 +10,13 @@ In This section we will explore how to create a project, the file structure behi
 
 After opening up, you should be on the welcome page, click the little icon of WPILIB on the top right corner, and type in Create New Project, then click enter:
 
-![Alt text](../../static/img/wpilib-icon.png)
+![Alt text](../../../static/img/wpilib-icon.png)
 
 Alternatively, you can do `ctrl + shift + p` or `cmd + shift + p` on mac and type WPILIB Create new project, then click enter.
 
 After you do that you should be on a page similar to this:
 
-![Alt text](../../static/img/create-project.png)
+![Alt text](../../../static/img/create-project.png)
 
 From here, fill template not example, java not cpp, and search Command Robot as a base. This is the most common type that is normally used, however we use something called a LoggedRobot, which you will learn about later. 
 
@@ -32,7 +32,7 @@ RobotContainer.java is where we **Initialize** our subsystems and configure our 
 
 Robot.java is our main robot loop. This means that every 20 milliseconds, we are monitoring the robot. We also  **Initialize** our robot container and **Command Scheduler**. These things are a necessity for our robot to run. Robot.java isn't touched that much, and we mainly do all of our configurations in RobotContainer.java.
 
-![Alt text](../../static/img/robot-robotcontainer.png)
+![Alt text](../../../static/img/robot-robotcontainer.png)
 > P.S. It's ok if you don't know what any of the bold words mean (Initialize, Loops, Command Scheduler). These are relatively advanced concepts, and will definitely be covered. If you're curious about them ask a lead programmer.
 
 
@@ -41,7 +41,7 @@ Robot.java is our main robot loop. This means that every 20 milliseconds, we are
 This is where we will create our subsystems (big parts of the robot), we usually have a folder for each subsystem, which consists of five files you will dive into later. These five files allow for us to have immense control over the mechanisms and create a boilerplate pattern based way to program each subsystem, making this easy peasy. Each subsystem would look something like this:
 
 
-![Alt text](../../static/img/subsystem.png)
+![Alt text](../../../static/img/subsystem.png)
 
 
 
