@@ -58,7 +58,7 @@ const features = [
     title: 'WPILib & Command-Based Programming',
     body:
       'Dive into the WPILib command-based framework. Learn subsystems, commands, the scheduler, and how hardware IO is abstracted using AdvantageKit\'s IO layer.',
-    href: '/docs/intro',
+    href: '/docs/Training/WPILIB Basics/wpilib-install',
   },
   {
     icon: '🛠️',
@@ -107,9 +107,9 @@ function FeatureCards() {
 
 const footerLinks = {
   Curriculum: [
-    { label: 'Java Basics',     href: '/docs/intro' },
+    { label: 'Java Basics',     href: '/docs/Training/Java Basics/simple-basics' },
     { label: 'Git & OOP',        href: '/docs/intro' },
-    { label: 'WPILib',           href: '/docs/intro' },
+    { label: 'WPILib',           href: '/docs/Training/WPILIB Basics/wpilib-install' },
     { label: 'Hardware IO',      href: '/docs/intro' },
     { label: 'AdvantageKit',     href: '/docs/intro' },
     { label: 'Autonomous',       href: '/docs/intro' },

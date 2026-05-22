@@ -5,7 +5,7 @@
  */
 
 /* You can override the default Infima variables here. */
-:root {
+/* :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
@@ -15,10 +15,12 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-}
+} */
+
+
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+/* [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -27,4 +29,82 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+} */
+
+
+:root {
+  /* Steel Hawks Primary Red Palette */
+  --ifm-color-primary: #8B1E1E;
+  --ifm-color-primary-dark: #6B1616;
+  --ifm-color-primary-darker: #5A1212;
+  --ifm-color-primary-darkest: #450D0D;
+  --ifm-color-primary-light: #A62A2A;
+  --ifm-color-primary-lighter: #B33030;
+  --ifm-color-primary-lightest: #C43A3A;
+
+  /* Background & Text */
+  --ifm-background-color: #0A0A0A;
+  --ifm-background-surface-color: #1A1A1A;
+  
+  --ifm-font-color-base: #F0F0F0;
+  --ifm-font-color-secondary: #9CA3AF;
+  
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(139, 30, 30, 0.1);
+}
+
+/* Dark Mode Overrides (Optional, if you want to keep it dark-themed by default) */
+[data-theme='dark'] {
+  --ifm-color-primary: #A62A2A;
+  --ifm-color-primary-dark: #8B1E1E;
+  --ifm-color-primary-darker: #7A1919;
+  --ifm-color-primary-darkest: #651212;
+  --ifm-color-primary-light: #B33030;
+  --ifm-color-primary-lighter: #C43A3A;
+  --ifm-color-primary-lightest: #D14545;
+  
+  --ifm-background-color: #0A0A0A;
+  --ifm-background-surface-color: #1A1A1A;
+  
+  --ifm-font-color-base: #F0F0F0;
+  --ifm-font-color-secondary: #9CA3AF;
+  
+  --docusaurus-highlighted-code-line-bg: rgba(139, 30, 30, 0.3);
+}
+
+[data-theme='light'] {
+    /* Backgrounds: Clean tactical off-white to light gray */
+  --ifm-color-primary: #8B1E1E; /* Tactical Red remains the accent */
+  --ifm-color-primary-dark: #6B1616;
+  --ifm-color-primary-darker: #5A1212;
+  --ifm-color-primary-darkest: #450D0D;
+  --ifm-color-primary-light: #A62A2A;
+  --ifm-color-primary-lighter: #B33030;
+  --ifm-color-primary-lightest: #C43A3A;
+
+  --ifm-background-color: #F4F4F4;       /* Light Concrete */
+  --ifm-background-surface-color: #FFFFFF; /* Pure White for cards/nav */
+
+  --ifm-font-color-base: #1A1A1A;        /* Dark Slate (almost black) */
+  --ifm-font-color-secondary: #4A4A4A;   /* Medium Gray */
+
+  --ifm-heading-font-family: 'Anton', sans-serif; /* Optional: Matches the bold look */
+  
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(139, 30, 30, 0.1);
+  
+  /* Code block background for light mode */
+  --prism-background-color: #ffffff;
+  --prism-color: #333333;
+}
+
+.hero--primary {
+  --ifm-hero-background-color: #0A0A0A;
+  --ifm-hero-text-color: #F0F0F0;
+}
+
+/* Ensure buttons are solid red without gradients if preferred */
+.button--primary {
+  background-color: var(--ifm-color-primary);
+  border: none;
 }

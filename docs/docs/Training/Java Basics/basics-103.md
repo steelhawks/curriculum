@@ -27,7 +27,12 @@ System.out.println(agePlusValue(5));
 
 In this example, we have `public`, our access modifier. Then we have `double`, our return data type. Inside the parenthesis, we have something called a `parameter`. A parameter is something you input when calling a function, and you manipulate parameters inside the function. Parameters are useful because sometimes the value you are returning will change based on the context of where the function is called. We use parameters a lot in our code.
 
+### Shorthand Functions
+Sometimes, a function is only called once in the entire code, and we don't need a name or separate block of code for this function. This function is called a *lambda function* A lambda function is created like this: `() -> whatever goes inside`. Inside the parenthesis we have any parameters needed, however you'll notice there isn't any return type. That's becuase these functions don't return something usually, but do an action. This doesn't mean you can't return anything but it's not normally used for that. s
+
 **Best Practice** Use parameters until you get to the last instance of your function (e.i. using the same parameter throughout functions until you really have to put a value)
+
+
 
 <Quiz questions={[
 {

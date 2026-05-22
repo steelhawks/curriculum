@@ -11,7 +11,7 @@ Welcome to Hardware 101! Congratulations again on completing basic java! I know 
 
 ## Systemcore
 
-Welcome to our first piece of equipment. The systemcore is the 2027 brain of our robot. This is similar to a computer. It contains a cpu, and processes all our code. We then connect everything to the systemcore and then it runs our code on the correct mechanisms. The main breakdown of ports and information of the Systemcore is here: **[Systemcore Docs](https://downloads.limelightvision.io/documents/systemcore_specifications_june15_2025_alpha.pdf)
+Welcome to our first piece of equipment. The systemcore is the 2027 brain of our robot. This is similar to a computer. It contains a cpu, and processes all our code. We then connect everything to the systemcore and then it runs our code on the correct mechanisms. The main breakdown of ports and information of the Systemcore is here: **[Systemcore Docs](https://downloads.limelightvision.io/documents/systemcore_specifications_june15_2025_alpha.pdf)**
 Some pertinent information inlcudes it has 5 CANBus interfaces and It has io ports and also pmw ports, as well as addressable LED (which we use for our led's). It also has brownout protection.
 
 
@@ -19,7 +19,7 @@ Some pertinent information inlcudes it has 5 CANBus interfaces and It has io por
  You might be asking how do we send code to systemcore, well, checkout the radio section for information about how we send code.
 
 ## Radio
-The radio is what we use to deploy code on the robot. It broadcasts a wifi signal, and we connect to it's wifi, then we click deploy robot code. When we deploy, the radio connects to the systemcore and then sends the code, which then get's processed. We do something called radio tethering, to learn more about it go to this link: **[FRC Radio Programming](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-3/radio-programming.html)**. The radio is extremely important in have a succesful robot, and we will talk more about radio tethering in Hardware 102
+The radio is what we use to deploy code on the robot. It broadcasts a wifi signal, and we connect to it's wifi, then we click deploy robot code. When we deploy, the radio connects to the systemcore and then sends the code, which then get's processed. We do something called radio tethering, to learn more about it go to this link: **[FRC Radio Programming](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-3/radio-programming.html)**. The radio is extremely important in having a succesful robot, and we will talk more about radio tethering in Hardware 102
 
 ## PDP/PDH
 
