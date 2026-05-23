@@ -1,5 +1,5 @@
 ---
-sidebar: 7
+sidebar_position: 7
 ---
 
 import Quiz from '@site/src/components/Quiz.jsx'

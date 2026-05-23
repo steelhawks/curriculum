@@ -55,6 +55,19 @@ So what is a data type. A data type is the type of thing we store in a variable.
 | True/False | boolean | false |
 > Note that int and double don't have quotation marks, if you put quotations marks around anything (including numbers), they become the String data type. So be careful what data type you use.
 
+
+
+#### Arrays
+Arrays (lists), is a special type of data that is widely used throughout programming. Essentially, it is list of a certain data type. For example, if you wanted to store a list of grocery items, you would create an array of type String, which would then contain all grocery items. Arrays are useful for storing a lot of the same related data together, just like a normal list. Here's how we create an array
+
+```
+String[] grocery_items = ["Banana", "Milk", "Bread", "Bulgogi Beef"];
+```
+
+when declaring the type of an array, make sure to add `[]` at the end. 
+
+**Multi Dimensional Arrays**: The grocery list array above is known as a 1d array. In the simplest terms possible, this means that there is only 1 set of `[]`. When you have a 2d or 3d array, you have more brackets, so you're data would look way more complicated. 2d and 3d arrays are pretty complicated, but if you can imagine a 2d or 3d graph, points can be modeled with a 2d or 3d array, which is again just arrays within arrays. an example of a 2d array would be `double[][] random = [[3, 2, 4], [4, 2, 3]];` This kind of array is essentially `[]` within a `[]`, which is considered a multidimensional array.
+
 #### Creating Variables
 
 Let's do a small quiz to see if you can develop your own variable:

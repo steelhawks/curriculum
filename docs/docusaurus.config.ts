@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Steel Hawks Programming Curriculum',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/hawk.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {

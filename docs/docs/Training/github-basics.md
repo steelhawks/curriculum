@@ -6,6 +6,9 @@ sidebar_position: 3
 
 Github is what we use on a daily basis to share code with each other, it's a place to view, collaborate, and work on projects simultaneously while keeping our code intact.
 
+## What is Github?
+Github is a place where people store they're code, share it, and have people collaborate on it. Code there is usually open source (people can copy it) and is openly shared with other members of the community. Our team uses Github to share code with each other and collaborate from separate devices, which is extremely useful with such a large team. 
+
 ## Installing Git & Github
 
 First, headover to this link **[Git Install](https://git-scm.com/install/)** and choose your operating system, and click download. After installing, you'll need to follow some steps for setup, but we'll go through that later. 
@@ -16,7 +19,7 @@ After installing Git, install Github Desktop. Go to this link **[Github Desktop]
 
 Open up powershell on windows by going to the start menu and typing in powershell, then type these two lines one after another and click enter after each one.
 
-`git config --global user.name "[Your Name]"` and then after clicking `enter` type `$ git config --global user.email [Your Personal Email]` and clicke enter again. Now you have set up git and github desktop.
+`git config --global user.name "[Your Name]"` and then after clicking `enter` type `$ git config --global user.email [Your Personal Email]` and click enter again. Now you have set up git and github desktop.
 
 
 ## Github Basics

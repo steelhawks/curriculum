@@ -88,7 +88,6 @@ const SECTIONS: Section[] = [
           {label: 'Explore WPILib', to: '/docs/Training/WPILIB Basics/explore-wpilib'},
           {label: 'Hardware 101', to: '/docs/Training/WPILIB Basics/hardware-101'},
           {label: 'Hardware 102', to: '/docs/Training/WPILIB Basics/hardware-102'},
-          {label: 'Hardware File', to: '/docs/Training/WPILIB Basics/hardware-file'},
           {label: 'Motors', to: '/docs/Training/WPILIB Basics/motors'},
           {label: 'Configs', to: '/docs/Training/WPILIB Basics/configs'},
         ],
