@@ -40,8 +40,8 @@ const config: Config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'cad',
-        path: 'cad-docs',
-        routeBasePath: 'cad',
+        path: 'cad-learn',
+        routeBasePath: 'cad/learn',
         sidebarPath: './sidebarsCad.ts',
       },
     ],

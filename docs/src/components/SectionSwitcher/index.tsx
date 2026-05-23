@@ -14,7 +14,7 @@ type Section = {
 
 const SECTIONS: Section[] = [
   {label: 'Programming', to: '/docs/intro', match: '/docs'},
-  {label: 'CAD', to: '/cad/intro', match: '/cad'},
+  {label: 'CAD', to: '/cad/', match: '/cad'},
 ];
 
 export default function SectionSwitcher(): JSX.Element {

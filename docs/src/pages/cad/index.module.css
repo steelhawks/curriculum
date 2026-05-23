@@ -1,0 +1,534 @@
+/* ─── Page shell ──────────────────────────────────────────────────────────── */
+
+.page {
+  --cad-ink: #0d1117;
+  --cad-ink-soft: #1f2730;
+  --cad-paper: #f7f5ef;
+  --cad-paper-2: #efece2;
+  --cad-line: rgba(13, 17, 23, 0.12);
+  --cad-accent: #c9482f;
+  --cad-accent-soft: #f6dbd2;
+  background: var(--cad-paper);
+  color: var(--cad-ink);
+  min-height: 100vh;
+}
+
+[data-theme='dark'] .page {
+  --cad-ink: #f4f1e8;
+  --cad-ink-soft: #d7d2c2;
+  --cad-paper: #0e1116;
+  --cad-paper-2: #161a22;
+  --cad-line: rgba(244, 241, 232, 0.12);
+  --cad-accent: #ff7a5a;
+  --cad-accent-soft: rgba(255, 122, 90, 0.16);
+}
+
+.sectionInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 4vw, 3rem);
+}
+
+/* ─── Hero ─────────────────────────────────────────────────────────────────── */
+
+.hero {
+  padding: clamp(3rem, 8vw, 6rem) 0 clamp(2rem, 5vw, 4rem);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--cad-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--cad-line) 1px, transparent 1px);
+  background-size: 56px 56px;
+  background-position: -1px -1px;
+  opacity: 0.55;
+  pointer-events: none;
+  mask-image: radial-gradient(ellipse at top left, black, transparent 70%);
+}
+
+.heroGrid {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 4vw, 3rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.heroEyebrow {
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cad-accent);
+  margin: 0 0 1.25rem;
+}
+
+.heroTitle {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+  margin: 0 0 1.5rem;
+  color: var(--cad-ink);
+}
+
+.heroAccent {
+  color: var(--cad-accent);
+  font-style: italic;
+  font-weight: 700;
+}
+
+.heroLead {
+  font-size: clamp(1.05rem, 1.4vw, 1.2rem);
+  line-height: 1.55;
+  color: var(--cad-ink-soft);
+  max-width: 38rem;
+  margin: 0 0 2rem;
+}
+
+.heroCtas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.ctaPrimary,
+.ctaSecondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: transform 150ms ease, background 150ms ease, color 150ms ease;
+}
+
+.ctaPrimary {
+  background: var(--cad-ink);
+  color: var(--cad-paper);
+}
+
+.ctaPrimary:hover {
+  transform: translateY(-1px);
+  text-decoration: none;
+  color: var(--cad-paper);
+  background: var(--cad-accent);
+}
+
+.ctaArrow {
+  transition: transform 150ms ease;
+}
+
+.ctaPrimary:hover .ctaArrow {
+  transform: translateX(3px);
+}
+
+.ctaSecondary {
+  color: var(--cad-ink);
+  border: 1px solid var(--cad-line);
+  background: transparent;
+}
+
+.ctaSecondary:hover {
+  border-color: var(--cad-ink);
+  text-decoration: none;
+  color: var(--cad-ink);
+}
+
+/* Hero video frame */
+
+.heroVideo {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--cad-line);
+  background: var(--cad-paper-2);
+}
+
+.videoFrame {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-image:
+    linear-gradient(135deg, var(--cad-accent-soft) 0%, transparent 60%),
+    linear-gradient(var(--cad-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--cad-line) 1px, transparent 1px);
+  background-size: 100% 100%, 32px 32px, 32px 32px;
+}
+
+.videoPlay {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: var(--cad-ink);
+  color: var(--cad-paper);
+  display: grid;
+  place-items: center;
+  font-size: 1.75rem;
+  padding-left: 6px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
+}
+
+.videoCaption {
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cad-ink-soft);
+  background: var(--cad-paper);
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--cad-line);
+}
+
+/* ─── Sub-nav ──────────────────────────────────────────────────────────────── */
+
+.subNav {
+  border-top: 1px solid var(--cad-line);
+  border-bottom: 1px solid var(--cad-line);
+  background: var(--cad-paper-2);
+  position: sticky;
+  top: var(--ifm-navbar-height, 60px);
+  z-index: 5;
+  backdrop-filter: blur(8px);
+}
+
+.subNavInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 4vw, 3rem);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  overflow-x: auto;
+}
+
+.subNavItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1rem 1.25rem;
+  border-right: 1px solid var(--cad-line);
+  color: var(--cad-ink-soft);
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 150ms ease, background 150ms ease;
+}
+
+.subNavItem:first-child {
+  border-left: 1px solid var(--cad-line);
+}
+
+.subNavItem:hover {
+  background: var(--cad-paper);
+  color: var(--cad-accent);
+  text-decoration: none;
+}
+
+.subNavIndex {
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: var(--cad-accent);
+  opacity: 0.75;
+}
+
+/* ─── Sections ─────────────────────────────────────────────────────────────── */
+
+.section,
+.sectionAlt {
+  padding: clamp(3.5rem, 8vw, 6rem) 0;
+}
+
+.sectionAlt {
+  background: var(--cad-paper-2);
+  border-top: 1px solid var(--cad-line);
+  border-bottom: 1px solid var(--cad-line);
+}
+
+.sectionEyebrow {
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--cad-accent);
+  margin: 0 0 1rem;
+}
+
+.sectionTitle {
+  font-size: clamp(1.85rem, 3.6vw, 2.85rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  margin: 0 0 1rem;
+  color: var(--cad-ink);
+  max-width: 28ch;
+}
+
+.sectionLead {
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
+  line-height: 1.55;
+  color: var(--cad-ink-soft);
+  max-width: 56ch;
+  margin: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+/* ─── Why CAD: reasons grid ────────────────────────────────────────────────── */
+
+.reasonsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1px;
+  background: var(--cad-line);
+  border: 1px solid var(--cad-line);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.reasonCard {
+  background: var(--cad-paper);
+  padding: clamp(1.5rem, 2.4vw, 2rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  position: relative;
+  transition: background 150ms ease;
+}
+
+.reasonCard:hover {
+  background: var(--cad-paper-2);
+}
+
+.reasonIndex {
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  color: var(--cad-accent);
+}
+
+.reasonTitle {
+  font-size: 1.2rem;
+  line-height: 1.25;
+  margin: 0;
+  color: var(--cad-ink);
+  letter-spacing: -0.01em;
+}
+
+.reasonBody {
+  font-size: 0.96rem;
+  line-height: 1.55;
+  color: var(--cad-ink-soft);
+  margin: 0;
+}
+
+.reasonTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+.reasonTag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.55rem;
+  border-radius: 4px;
+  background: var(--cad-accent-soft);
+  color: var(--cad-accent);
+}
+
+/* ─── Workflow ─────────────────────────────────────────────────────────────── */
+
+.workflowTrack {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr) auto);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+  align-items: stretch;
+}
+
+@media (max-width: 900px) {
+  .workflowTrack {
+    grid-template-columns: 1fr;
+  }
+}
+
+.workflowStep {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+
+.workflowCard {
+  flex: 1;
+  background: var(--cad-paper);
+  border: 1px solid var(--cad-line);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition: transform 150ms ease, border-color 150ms ease;
+}
+
+.workflowCard:hover {
+  transform: translateY(-2px);
+  border-color: var(--cad-ink);
+}
+
+.workflowN {
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--cad-accent);
+}
+
+.workflowLabel {
+  font-size: 1.05rem;
+  margin: 0;
+  color: var(--cad-ink);
+  letter-spacing: -0.01em;
+}
+
+.workflowBody {
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--cad-ink-soft);
+  margin: 0;
+}
+
+.workflowArrow {
+  position: absolute;
+  right: calc(clamp(1rem, 2vw, 1.5rem) * -0.5 - 0.55rem);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+  color: var(--cad-ink-soft);
+  pointer-events: none;
+  z-index: 1;
+}
+
+@media (max-width: 900px) {
+  .workflowArrow {
+    display: none;
+  }
+}
+
+/* ─── Dive-in cards ────────────────────────────────────────────────────────── */
+
+.diveGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.diveCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1.5rem;
+  background: var(--cad-paper);
+  border: 1px solid var(--cad-line);
+  border-radius: 14px;
+  color: var(--cad-ink);
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform 150ms ease, border-color 150ms ease;
+}
+
+.diveCard:hover {
+  transform: translateY(-2px);
+  border-color: var(--cad-ink);
+  text-decoration: none;
+  color: var(--cad-ink);
+}
+
+.diveCard::before {
+  content: '';
+  position: absolute;
+  inset: auto -40% -40% auto;
+  width: 200px;
+  height: 200px;
+  background: var(--cad-accent-soft);
+  border-radius: 50%;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.diveAccent {
+  position: relative;
+  z-index: 1;
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  color: var(--cad-accent);
+}
+
+.diveTitle {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: 1.15rem;
+  letter-spacing: -0.01em;
+}
+
+.diveBody {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--cad-ink-soft);
+}
+
+.diveCta {
+  position: relative;
+  z-index: 1;
+  margin-top: auto;
+  padding-top: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--cad-accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.diveCta span {
+  transition: transform 150ms ease;
+}
+
+.diveCard:hover .diveCta span {
+  transform: translateX(3px);
+}
