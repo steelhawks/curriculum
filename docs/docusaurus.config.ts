@@ -35,6 +35,18 @@ const config: Config = {
     locales: ['en'],
   },
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'cad',
+        path: 'cad-docs',
+        routeBasePath: 'cad',
+        sidebarPath: './sidebarsCad.ts',
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',
@@ -82,10 +94,8 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          type: 'custom-sectionSwitcher',
           position: 'left',
-          label: 'Tutorial',
         },
       ],
     },
