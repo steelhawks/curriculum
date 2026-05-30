@@ -50,6 +50,7 @@ Every robot we've built is a snapshot of where our software team was at that poi
 
 | Year | Game | Robot Name | Repository |
 |------|------|------------|------------|
+| 2026 | Rebuilt | Shaquille O'Steel | [2026](https://github.com/steelhawks/Rebuilt2026) |
 | 2025 | Reefscape | Chimera | [2025](https://github.com/steelhawks/Reefscape2025) |
 | 2024 | Crescendo | Hawk Rider | [2024](https://github.com/steelhawks/Crescendo2024) |
 | 2023 | Charged Up | Hawk Bibi | [2023](https://github.com/steelhawks/ChargedUP2023) |
